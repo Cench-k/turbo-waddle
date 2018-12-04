@@ -21,8 +21,8 @@
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$(window).resize(function(){
-					$(".slide_area").height
+				$(".slide_area").resize(function(){
+					$(window).height();
 				});
 			});
 		</script>
