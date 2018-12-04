@@ -8,11 +8,11 @@
 		<meta name="Description" content="">
 		<title>Kim's PortFolio</title>
 		
-		<link rel="stylesheet" href="/css/content.css" type="text/css">
-		<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
-		<script type="text/javascript" src="/script/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="/script/jquery-ui.js"></script>
-		<script type="text/javascript" src="/script/html5.js"></script>	
+		<link rel="stylesheet" href="css/content.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+		<script type="text/javascript" src="script/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="script/jquery-ui.js"></script>
+		<script type="text/javascript" src="script/html5.js"></script>	
 	</head>
 	<body>
 		<div class="slide_area">
