@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+	.slide_area { background:red; }
+
+/* 화면크기가 1030px보다 클 때 */
+@media screen and (min-width:1500px)  {
+	.slide_area { width:100%; max-width:1919px; min-width:1500px; margin:0 auto; }
+}
+/*중간 크기*/
+@media screen and (min-width:1200px)  and  (max-width:1499px){
+	.slide_area { width:100%; max-width:1919px; min-width:1200px; margin:0 auto; }
+}
+/* 화면크기가 1030px보다 작을 때 */
+@media screen and (max-width:1200px) {
+	.slide_area { width:100%; max-width:1200px; min-width:640px; margin:0 auto; }
+}

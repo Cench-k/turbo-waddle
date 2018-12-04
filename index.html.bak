@@ -7,13 +7,26 @@
 		<meta name="Keywords" content="">
 		<meta name="Description" content="">
 		<title>Kim's PortFolio</title>
-
-		<link rel="stylesheet" href="<?=$g4['path']?>/res/css/jquery-ui.css" type="text/css">
-		<script type="text/javascript" src="<?=$g4['path']?>/js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="<?=$g4['path']?>/js/jquery-ui.js"></script>
-		<script type="text/javascript" src="<?=$g4['path']?>/js/html5.js"></script>	
+		
+		<link rel="stylesheet" href="/css/content.css" type="text/css">
+		<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+		<script type="text/javascript" src="/script/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="/script/jquery-ui.js"></script>
+		<script type="text/javascript" src="/script/html5.js"></script>	
 	</head>
 	<body>
+		<div class="slide_area">
+		
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).resize(function(){
+					$(".slide_area").height
+				});
+			});
+		</script>
+
 
 	</body>
 </html>
