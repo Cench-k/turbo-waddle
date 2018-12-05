@@ -17,7 +17,7 @@ $(document).ready(function(){
 		$(".slide_box .bottom_list li:eq(" + pofile_no + ").on").css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 		rolling_p = setTimeout("pofile_next()",50000);
 
-		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")") == pofile_no ){
+		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")").hasClass("on") ){
 			$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 		}else{
 			$(this).css("background","none");
