@@ -3,7 +3,7 @@
 body { margin:0; padding:0; }
 
 	.wrap { overflow:hidden; position:relative; }
-		.slide_box { width:70%; margin:0 auto; }
+		.slide_box { width:70%; margin:0 auto; background:blue; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
