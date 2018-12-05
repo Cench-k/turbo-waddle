@@ -12,7 +12,8 @@ function kks_slide(){
 		} else {
 			pofile_no = 0
 		}
-		$(".slide_box .port").fadeout(500);
+		$(".slide_box .port").fadeOut(500);
+		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
 
 	}
 	

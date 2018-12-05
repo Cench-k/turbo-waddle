@@ -1,8 +1,5 @@
 $(window).onload(function(){
-	kks_slide();
-});
 
-function kks_slide(){
 	var pofile_no = 0;
 	var rolling_p = null;
 
@@ -15,6 +12,6 @@ function kks_slide(){
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
 
-	}
-	
-};
+	};
+
+});	
