@@ -6,14 +6,20 @@ body { margin:0; padding:0; }
 		.slide_box { margin:0 auto; overflow:hidden; position:relative; }
 			.box { width:100%; position:relative; }
 				.port { width:100%; height:90%; position:absolute; left:0; top:0; }
-				.view { display:none; }
-				.thum_box { width:100%; position:absolute; display:inline-block; }
-				.thum_box { width:100%; height:10%; position:absolute; bottom:0; left:0; background:#e1e1e1; }
 
 				.port:nth-child(1) { background:red; }
 				.port:nth-child(2) { background:yellow; }
 				.port:nth-child(3) { background:green; }
 				.port:nth-child(4) { background:black; }
+				.port:nth-child(5) { background:orange; }
+
+				.view { display:none; }
+
+				.thum_box { width:100%; height:10%; position:absolute; bottom:0; left:0; background:#e1e1e1; text-align:center; }
+				.thum_box > ul { display:inline-block; width:100%; height:100%; }
+				.thum_box > ul > li { float:left; width:20%; height:100%; }
+
+				
 
 				.prev { width:5%; height:5%; position:absolute; left:0; top:50%; margin-top:-7%; background:#efefef; z-index:15; }
 				.next { width:5%; height:5%; position:absolute; right:0; top:50%; margin-top:-7%; background:#ededed; z-index:15; }
