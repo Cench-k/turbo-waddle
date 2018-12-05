@@ -16,23 +16,24 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="">
+			<div class="slide_box">
 			
 			</div>
 		</div>
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				resize_slide();
+				resize_wrap();
 				$(window).resize(function(){
-					resize_slide();
+					resize_wrap();
 				});
 			});
 
-			function resize_slide(){
-				var area_height = $(window).height();
-				$(".wrap").height(area_height);
+			function resize_wrap(){
+				var wrap_height = $(window).height();
+				$(".wrap").height(wrap_height);
 			}
+			
 		</script>
 
 
