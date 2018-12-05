@@ -1,16 +1,5 @@
 $(document).ready(function(){
-		resize_wrap();
-		$(window).resize(function(){
-			resize_wrap();
-		});
-	
-
-	function resize_wrap(){
-		var wrap_height = $(window).height();
-		$(".wrap").height(wrap_height);
-		$(".slide_box").height(wrap_height);
-		$(".box").height(wrap_height);
-	}
+		
 
 	var pofile_no = 0;
 	var rolling_p = null;
@@ -23,7 +12,7 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
-		rolling_psetTimeout("pofile_next()",50000);
+		//rolling_psetTimeout("pofile_next()",50000);
 
 	};
 
@@ -41,7 +30,7 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
-		rolling_psetTimeout("pofile_next()",50000);
+		//rolling_psetTimeout("pofile_next()",50000);
 	});
 
 });
