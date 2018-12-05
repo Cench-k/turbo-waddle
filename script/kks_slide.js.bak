@@ -27,6 +27,9 @@ $(window).onload(function(){
 		}else{
 			pofile_no = $(".slide_box .port").length-1)	
 		}
+		$(".slide_box .port").fadeOut(500);
+		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
+		rolling_psetTimeout("pofile_next()",50000);
 	});
 
 });	
