@@ -5,7 +5,7 @@ body { margin:0; padding:0; }
 	.wrap { overflow:hidden; position:relative; }
 		.slide_box { margin:0 auto; overflow:hidden; position:relative; }
 			.box { width:100%; position:relative; }
-				.port { width:100%; height:80%; position:absolute; left:0; top:0; }
+				.port { width:100%; height:80%; position:absolute; left:0; top:0; z-index:10; }
 				.thum_box { width:100%; position:absolute; display:inline-block; }
 
 				.port:nth-child(1) { background:red; }
@@ -13,8 +13,8 @@ body { margin:0; padding:0; }
 				.port:nth-child(3) { background:green; }
 				.port:nth-child(4) { background:black; }
 
-				.prev { width:5%; height:5%; position:absolute; left:0; top:50%; margin-top:-2%; background:#efefef; }
-				.prev { width:5%; height:5%; position:absolute; right:0; top:50%; margin-top:-2%; background:#ededed; }
+				.prev { width:5%; height:5%; position:absolute; left:0; top:50%; margin-top:-4%; background:#efefef; z-index:15; }
+				.prev { width:5%; height:5%; position:absolute; right:0; top:50%; margin-top:-2%; background:#ededed; z-index:15; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
