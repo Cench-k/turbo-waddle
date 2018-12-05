@@ -2,7 +2,7 @@
 
 body { margin:0; padding:0; }
 
-	.slide_area { overflow:hidden; }
+	.slide_area { overflow:hidden; position:relative; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
