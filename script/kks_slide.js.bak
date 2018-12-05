@@ -34,16 +34,16 @@ $(document).ready(function(){
 	});
 
 	$(".slide_box .bottom_list li").mouseover(function(){
-		if (visualno!=$(".slide_box .bottom_list li").index($(this))){
-			clearTimeout(rolling_v)
-			visualno=$(".slide_box .bottom_list li").index($(this))
-			$(".slide_box .bottom_list li").hide()
-			$(".slide_box .bottom_list li:eq("+visualno+")").show()
-			$(".slide_box .pht").fadeOut(500)
-			$(".slide_box .pht:eq("+visualno+")").fadeIn(500)
-			rolling_v=setTimeout("pofile_next()",5000)
-		}
-	})
+		if (pofile_no != $(".slide_box .bottom_list li").index($(this))){
+			clearTimeout(rolling_p);
+			pofile_no=$(".slide_box .bottom_list li").index($(this));
+			$(".slide_box .bottom_list li").hide();
+			$(".slide_box .bottom_list li:eq("+visualno+")").show();
+			$(".slide_box .pht").fadeOut(500);
+			$(".slide_box .pht:eq("+visualno+")").fadeIn(500);
+			rolling_v=setTimeout("pofile_next()",5000);
+		};
+	});
 
 	
 
