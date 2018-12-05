@@ -21,10 +21,16 @@
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$(".slide_area").resize(function(){
-					$(".slide_area").css("height",$(window).height());
+				resize_slide();
+				$(window).resize(function(){
+					resize_slide();
 				});
 			});
+
+			function resize_slide(){
+				var area_height = $(window).height();
+				$(".slide_area").height(area_height);
+			}
 		</script>
 
 
