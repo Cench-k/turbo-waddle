@@ -47,7 +47,7 @@ $(document).ready(function(){
 		};
 	});
 
-	$(".slide_box .bottom_list li").mouseover(function(){
+	$(".slide_box .bottom_list li").mouseleave(function(){
 		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").css("background","none");
 	});
 
