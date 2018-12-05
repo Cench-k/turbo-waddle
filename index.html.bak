@@ -15,12 +15,13 @@
 		<script type="text/javascript" src="script/html5.js"></script>	
 	</head>
 	<body>
-		<div class="slide_area">
-		
+		<div class="wrap">
+			
 		</div>
 		
 		<script type="text/javascript">
-			$(function(){
+			$(document).ready(function(){
+				resize_slide();
 				$(window).resize(function(){
 					resize_slide();
 				});
