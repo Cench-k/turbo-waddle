@@ -2,17 +2,19 @@
 
 body { margin:0; padding:0; }
 
-	.slide_area { overflow:hidden; position:relative; }
+	.wrap { overflow:hidden; position:relative; }
+		.slide_box { width:70%; margin:0 auto; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
-	.slide_area { width:100%; max-width:1920px; min-width:1500px; margin:0 auto; }
+	.wrap { width:100%; max-width:1920px; min-width:1500px; margin:0 auto; }
+		
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
-	.slide_area { width:100%; max-width:1920px; min-width:1200px; margin:0 auto; }
+	.wrap { width:100%; max-width:1920px; min-width:1200px; margin:0 auto; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {
-	.slide_area { width:100%; max-width:1200px; min-width:640px; margin:0 auto; }
+	.wrap { width:100%; max-width:1200px; min-width:640px; margin:0 auto; }
 }

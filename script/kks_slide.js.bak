@@ -1,0 +1,7 @@
+$(window).onload(function(){
+	function kks_slide(){
+		var pofile = 0;
+		var rolling_p = null;
+		
+	};
+});
