@@ -12,7 +12,7 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
-		rolling_psetTimeout("pofile_next()",50000);
+		rolling_p = setTimeout("pofile_next()",50000);
 
 	};
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
-		rolling_psetTimeout("pofile_next()",50000);
+		rolling_p = setTimeout("pofile_next()",50000);
 	});
 
 });
