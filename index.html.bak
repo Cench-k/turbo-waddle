@@ -22,7 +22,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$(".slide_area").resize(function(){
-					$(window).height();
+					$(".slide_area").height($(window).height());
 				});
 			});
 		</script>
