@@ -33,15 +33,6 @@ $(document).ready(function(){
 		rolling_p = setTimeout("pofile_next()",50000);
 	});
 
-	$(window).resize(function(){
-		resize_wrap();
-	});
-
-	function resize_wrap(){
-		var wrap_height = $(window).height();
-		$(".wrap").height(wrap_height);
-		$(".slide_box").height(wrap_height);
-		$(".box").height(wrap_height);
-	};
+	
 
 });
