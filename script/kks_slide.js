@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 	$(".slide_box .bottom_list li").mouseleave(function(){
 		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").removeClass("on");
-		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")" == pofile_no ){
+		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")") == pofile_no ){
 			$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 		}else{
 			$(this).css("background","none");
