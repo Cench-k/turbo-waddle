@@ -37,7 +37,7 @@ $(document).ready(function(){
 		if (pofile_no != $(".slide_box .bottom_list li").index($(this))){
 			clearTimeout(rolling_p);
 			pofile_no=$(".slide_box .bottom_list li").index($(this));
-			$(".slide_box .bottom_list li").hide();
+			//$(".slide_box .bottom_list li").hide();
 			$(".slide_box .bottom_list li:eq("+pofile_no+")").show();
 			$(".slide_box .pht").fadeOut(500);
 			$(".slide_box .pht:eq("+pofile_no+")").fadeIn(500);

@@ -36,9 +36,9 @@ $(document).ready(function(){
 	$(".slide_box .bottom_list li").mouseover(function(){
 		if (pofile_no != $(".slide_box .bottom_list li").index($(this))){
 			clearTimeout(rolling_p);
-			pofile_no=$(".slide_box .bottom_list li").index($(this));
-			//$(".slide_box .bottom_list li").hide();
-			$(".slide_box .bottom_list li:eq("+pofile_no+")").show();
+			pofile_no = $(".slide_box .bottom_list li").index($(this));
+			$(".slide_box .bottom_list li").removeClass("on");
+			$(".slide_box .bottom_list li:eq("+pofile_no+")").addClass("on");
 			$(".slide_box .pht").fadeOut(500);
 			$(".slide_box .pht:eq("+pofile_no+")").fadeIn(500);
 			rolling_p = setTimeout("pofile_next()",50000);
