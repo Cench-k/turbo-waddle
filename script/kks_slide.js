@@ -41,7 +41,7 @@ $(document).ready(function(){
 			$(".slide_box .bottom_list li:eq("+pofile_no+")").show();
 			$(".slide_box .pht").fadeOut(500);
 			$(".slide_box .pht:eq("+pofile_no+")").fadeIn(500);
-			rolling_p = setTimeout("pofile_next()",5000);
+			rolling_p = setTimeout("pofile_next()",50000);
 		};
 	});
 
