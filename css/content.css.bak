@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 
+	.slide_area { background:red; }
+
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
 	.slide_area { width:100%; max-width:1919px; min-width:1500px; margin:0 auto; }
