@@ -17,12 +17,12 @@ $(document).ready(function(){
 	};
 
 	$(".slide_box .next").click(function(){
-		clearTimeout(rolling_p);
+		//clearTimeout(rolling_p);
 		pofile_next();
 	});
 	
 	$(".slide_box .prev").click(function(){
-		clearTimeout(rolling_p);
+		//clearTimeout(rolling_p);
 		if (pofile_no > 0){
 			pofile_no--
 		}else{
