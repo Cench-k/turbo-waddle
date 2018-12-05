@@ -3,18 +3,29 @@
 body { margin:0; padding:0; }
 
 	.wrap { overflow:hidden; position:relative; }
-		.slide_box { width:70%; margin:0 auto; background:blue; }
+		.slide_box { margin:0 auto; overflow:hidden; position:relative; }
+			.box { width:100%; position:relative; }
+				.port { width:100%; position:relative; }
+				.thum_box { width:100%; position:absolute; display:inline-block; }
+
+				.port:nth-child(1) { background:red; }
+				.port:nth-child(2) { background:yellow; }
+				.port:nth-child(3) { background:green; }
+				.port:nth-child(4) { background:black; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
 	.wrap { width:100%; max-width:1920px; min-width:1500px; margin:0 auto; }
+		.slide_box { width:70%; }
 		
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
 	.wrap { width:100%; max-width:1920px; min-width:1200px; margin:0 auto; }
+		.slide_box { width:70%; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {
 	.wrap { width:100%; max-width:1200px; min-width:640px; margin:0 auto; }
+		.slide_box { width:100%; }
 }

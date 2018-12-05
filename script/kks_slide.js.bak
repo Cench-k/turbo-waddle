@@ -1,7 +1,19 @@
 $(window).onload(function(){
-	function kks_slide(){
-		var pofile = 0;
-		var rolling_p = null;
-		
-	};
+	kks_slide();
 });
+
+function kks_slide(){
+	var pofile_no = 0;
+	var rolling_p = null;
+
+	pofile_next = function(){
+		if (pofile_no < $(".slide_box .port").length-1){
+			pofile_no++
+		} else {
+			pofile_no = 0
+		}
+		$(".slide_box .port").fadeout(500);
+
+	}
+	
+};
