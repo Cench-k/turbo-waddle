@@ -50,10 +50,16 @@ $(document).ready(function(){
 			$(".slide_box .port:eq("+pofile_no+")").fadeIn(500);
 			rolling_p = setTimeout("pofile_next()",50000);
 		};
+		console.log(pofile_no);
 	});
 
 	$(".slide_box .bottom_list li").mouseleave(function(){
 		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").removeClass("on");
+		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")" == pofile_no ){
+			$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background"));
+		}else{
+			$(this).css("background","none");
+		}
 	});
 
 	
