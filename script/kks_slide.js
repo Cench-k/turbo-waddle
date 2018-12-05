@@ -12,6 +12,8 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
+		$(".slide_box .bottom_list li").removeClass("on");
+		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").addClass("on");
 		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").hasClass("on").css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 		rolling_p = setTimeout("pofile_next()",50000);
 
@@ -31,6 +33,9 @@ $(document).ready(function(){
 		}
 		$(".slide_box .port").fadeOut(500);
 		$(".slide_box .port:eq(" + pofile_no + ")").fadeIn(500);
+		$(".slide_box .bottom_list li").removeClass("on");
+		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").addClass("on");
+		$(".slide_box .bottom_list li:eq(" + pofile_no + ")").hasClass("on").css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 		rolling_p = setTimeout("pofile_next()",50000);
 	});
 
