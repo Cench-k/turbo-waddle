@@ -4,6 +4,14 @@ $(document).ready(function(){
 	var pofile_no = 0;
 	var rolling_p = null;
 
+	$(function(){
+		if($(".slide_box .bottom_list li:eq(" + pofile_no + ")") == pofile_no ){
+			$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background"));
+		}else{
+			$(this).css("background","none");
+		}
+	});
+
 	pofile_next = function(){
 		if (pofile_no < $(".slide_box .port").length-1){
 			pofile_no++
