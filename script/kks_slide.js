@@ -63,7 +63,7 @@ $(document).ready(function(){
 			rolling_p = setTimeout("pofile_next()",50000);
 
 			if($(".slide_box .bottom_list li:eq(" + pofile_no + ")").hasClass("on") ){
-				$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background");
+				$(this).css("background",$(".port:eq(" + pofile_no + ")").css("background"));
 			}else{
 				$(this).css("background","none");
 			}
