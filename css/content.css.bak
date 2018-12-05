@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
+body { margin:0; padding:0; }
 
-	.slide_area { background:red; }
+	.slide_area { overflow:hidden; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
