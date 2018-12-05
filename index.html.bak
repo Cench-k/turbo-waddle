@@ -20,9 +20,9 @@
 			<div class="slide_box">
 				<div class="box">
 					<div class="port"></div>
-					<div class="port"></div>
-					<div class="port"></div>
-					<div class="port"></div>
+					<div class="port view"></div>
+					<div class="port view"></div>
+					<div class="port view"></div>
 				</div>
 				<div class="prev"></div>
 				<div class="next"></div>
