@@ -33,7 +33,19 @@
 		</div>
 		
 		<script type="text/javascript">
+		window.onload = function() {
 			
+			$(window).resize(function(){
+				resize_wrap();
+			});
+
+			function resize_wrap(){
+				var wrap_height = $(window).height();
+				$(".wrap").height(wrap_height);
+				$(".slide_box").height(wrap_height);
+				$(".box").height(wrap_height);
+			};
+		};
 			
 		</script>
 

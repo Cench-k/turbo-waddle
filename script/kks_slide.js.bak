@@ -1,15 +1,5 @@
 $(document).ready(function(){
 	
-	$(window).resize(function(){
-				resize_wrap();
-			});
-
-		function resize_wrap(){
-			var wrap_height = $(window).height();
-			$(".wrap").height(wrap_height);
-			$(".slide_box").height(wrap_height);
-			$(".box").height(wrap_height);
-		}
 
 	var pofile_no = 0;
 	var rolling_p = null;
