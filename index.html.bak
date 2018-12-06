@@ -19,7 +19,9 @@
 		<div class="wrap">
 			<div class="slide_box">
 				<div class="box">
-					<div class="port"></div>
+					<div class="port">
+						<h1 class="title">ProFile</h1>
+					</div>
 					<div class="port view"></div>
 					<div class="port view"></div>
 					<div class="port view"></div>
@@ -29,7 +31,7 @@
 				<div class="next"></div>
 				<div class="thum_box">
 					<ul class="bottom_list">
-						<li class="on">A</li>
+						<li class="on">Profile</li>
 						<li>B</li>
 						<li>C</li>
 						<li>D</li>
@@ -53,6 +55,12 @@
 				$(".slide_box").height(wrap_height);
 				$(".box").height(wrap_height);
 			}
+
+			$(function(){
+				setTimeout(function(){
+					$(".title").stop().swing();
+				},1000);
+			});
 			
 		</script>
 

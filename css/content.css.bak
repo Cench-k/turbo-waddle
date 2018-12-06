@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
+@font-face { font-family: 'BMDOHYEON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 body { margin:0; padding:0; }
 
 	.wrap { overflow:hidden; position:relative; }
 		.slide_box { margin:0 auto; overflow:hidden; position:relative; }
 			.box { width:100%; position:relative; }
-				.port { width:100%; height:90%; position:absolute; left:0; top:0; }
+				.port { width:100%; height:90%; position:absolute; left:0; top:0; overflow:hidden; text-align:center; }
 
-				.port:nth-child(1) { background:red; }
+				.port:nth-child(1) {  }
 				.port:nth-child(2) { background:yellow; }
 				.port:nth-child(3) { background:green; }
 				.port:nth-child(4) { background:black; }
@@ -15,29 +17,33 @@ body { margin:0; padding:0; }
 
 				.view { display:none; }
 
-				.thum_box { width:100%; height:10%; position:absolute; bottom:0; left:0; background:#e1e1e1; text-align:center; }
+					.title { display:inline-block; }
+
+				.thum_box { width:100%; height:10%; position:absolute; bottom:0; left:0; text-align:center; }
 					.bottom_list { display:inline-block; width:100%; height:100%; padding:0; margin:0; }
-					.bottom_list > li { float:left; width:20%; height:100%; list-style:none; }
-					.bottom_list > li.on {  }
+					.bottom_list > li { float:left; width:20%; height:100%; list-style:none; border:0; font-family:"BMDOHYEON"; background:#fff; }
+					.bottom_list > li.on { background:#232323; color:#fff; }
 
 				
 
-				.prev { width:5%; height:5%; position:absolute; left:0; top:50%; margin-top:-7%; background:#efefef; z-index:15; }
-				.next { width:5%; height:5%; position:absolute; right:0; top:50%; margin-top:-7%; background:#ededed; z-index:15; }
+				.prev { width:2%; height:5%; position:absolute; left:0; top:50%; margin-top:-5%; background:#efefef; z-index:15; }
+				.next { width:2%; height:5%; position:absolute; right:0; top:50%; margin-top:-5%; background:#ededed; z-index:15; }
 
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
 	.wrap { width:100%; max-width:1920px; min-width:1500px; margin:0 auto; }
-		.slide_box { width:70%; }
-		
+		.slide_box { width:100%; }
+		.bottom_list > li { line-height:320%; font-size:30px; }
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
 	.wrap { width:100%; max-width:1920px; min-width:1200px; margin:0 auto; }
-		.slide_box { width:70%; }
+		.slide_box { width:100%; }
+		.bottom_list > li { line-height:260%; font-size:25px; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {
 	.wrap { width:100%; max-width:1200px; min-width:640px; margin:0 auto; }
 		.slide_box { width:100%; }
+		.bottom_list > li { line-height:300%; font-size:22px; }
 }
