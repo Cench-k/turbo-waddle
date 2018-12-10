@@ -26,7 +26,7 @@ body { margin:0; padding:0; }
 									display: none;
 								 }
 
-					.test { width:30%; height:45%; background:#fff; display:inline-block; float:left; margin-left:5%; margin-top:5%; box-sizing:border-box; padding:1% 2%;
+					.test { width:30%; height:45%; background:#fff; display:inline-block; float:left; margin-left:5%; margin-top:5%; box-sizing:border-box; padding:1% 2%; position:relative;
 							transition: 0.5s all ease;
 							-webkit-transition: 0.5s all ease;
 							-moz-transition: 0.5s all ease;
@@ -34,6 +34,7 @@ body { margin:0; padding:0; }
 							position:relative;
 							box-sizing:border-box;
 							border:1px solid #292929;
+							text-align:left;
 							}
 					
 					.back { width:100%; height:45%; float:left; display:inline-block; }
@@ -41,6 +42,7 @@ body { margin:0; padding:0; }
 					.test:nth-of-type(3n+1) { margin-left:0; }
 						
 						.test > img { display:inline-block; width:100%; height:60%; }
+						
 
 				.thum_box { width:100%; height:10%; position:absolute; bottom:0; left:0; text-align:center; }
 					.bottom_list { display:inline-block; width:100%; height:100%; padding:0; margin:0; }
@@ -72,7 +74,10 @@ body { margin:0; padding:0; }
 							-webkit-transform: skewX(40deg);
 							-o-transform: skewX(40deg);
 							z-index:10;
+							box-shadow:65px 40px 25px -40px rgba(0,0,0,0.2)
 							}
+			.test > p { font-size:22px; font-weight:bold; font-family:"BMDOHYEON"; }
+				.go_site_btn { right:15px; bottom:10px; }
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
@@ -94,7 +99,10 @@ body { margin:0; padding:0; }
 							-webkit-transform: skewX(40deg);
 							-o-transform: skewX(40deg);
 							z-index:10;
+							box-shadow:65px 40px 25px -40px rgba(0,0,0,0.2)
 							}
+			.test > p { font-size:18px; font-weight:bold; font-family:"BMDOHYEON"; }
+				.go_site_btn { right:15px; bottom:10px; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {
@@ -117,6 +125,57 @@ body { margin:0; padding:0; }
 						-moz-transform: skewX(17deg);
 						-webkit-transform: skewX(17deg);
 						-o-transform: skewX(17deg);
-						z-index:10;
+						z-index:10
+						box-shadow:65px 40px 25px -40px rgba(0,0,0,0.2);
 						}
+			.test > p { font-size:15px; font-weight:bold; font-family:"BMDOHYEON"; }
+				.go_site_btn { right:15px; bottom:10px; }
+}
+
+.go_site_btn { width:11%; height:15%; position:absolute; border:1px solid #292929; cursor:pointer; border-radius:15%;
+				/* animation-name: go_site;
+				animation-duration: 1s;
+				animation-delay:.5s;
+				animation-iteration-count:infinite;
+				animation-direction: cubic-bezier(.17,.67,.16,.67) altenate; */
+				}
+
+@keyframes go_site{
+	0% { border-radius:0; }
+	25% { border-radius:10% }
+	50% { border-radius:20% }
+	75% { border-radius:40% }
+	100% { border-radius:50%; }
+}
+
+-webkit-@keyframes go_site{
+	0% { border-radius:0; }
+	25% { border-radius:10% }
+	50% { border-radius:20% }
+	75% { border-radius:40% }
+	100% { border-radius:50%; }
+}
+
+-moz-@keyframes go_site{
+	0% { border-radius:0; }
+	25% { border-radius:10% }
+	50% { border-radius:20% }
+	75% { border-radius:40% }
+	100% { border-radius:50%; }
+}
+
+-ms-@keyframes go_site{
+	0% { border-radius:0; }
+	25% { border-radius:10% }
+	50% { border-radius:20% }
+	75% { border-radius:40% }
+	100% { border-radius:50%; }
+}
+
+-o-@keyframes go_site{
+	0% { border-radius:0; }
+	25% { border-radius:10% }
+	50% { border-radius:20% }
+	75% { border-radius:40% }
+	100% { border-radius:50%; }
 }

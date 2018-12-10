@@ -56,7 +56,6 @@ $(document).ready(function(){
 		}else{
 			$(".slide_box .bottom_list li").removeClass("on");
 		};
-		console.log(pofile_no);
 	});
 
 	
