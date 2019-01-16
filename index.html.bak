@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="script/jquery-ui.js"></script>
 		<script type="text/javascript" src="script/html5.js"></script>	
 		<script type="text/javascript" src="script/kks_slide.js"></script>
+		<script type="text/javascript" src="script/link.js"></script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -215,7 +216,9 @@
 			}
 
 			$(function(){
-				$(".go_site_btn").stop().animate({"":""},300);
+				$(".go_site_btn").mouseenter(function(){
+					$(this).stop().animate({"":""},300);
+				})
 			})
 
 			

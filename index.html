@@ -216,7 +216,9 @@
 			}
 
 			$(function(){
-				$(".go_site_btn").stop().animate({"":""},300);
+				$(".go_site_btn").mouseenter(function(){
+					$(this).stop().animate({"border-rodius":"50%"},300);
+				})
 			})
 
 			
