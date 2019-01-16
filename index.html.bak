@@ -32,6 +32,7 @@
 								<div class="test">
 									<img src="img/2pg/1.jpg" />
 									<p>비긴어게인</p>
+									<div class="go_site_btn"></div>
 								</div>
 								<div class="test">
 									<img src="img/2pg/2.jpg" />
@@ -191,7 +192,7 @@
 						<li class="on">Profile</li>
 						<li>B</li>
 						<li>C</li>
-						<li>D</li>
+						<li>Work</li>
 						<li>E</li>
 					</ul>
 				</div>
@@ -212,6 +213,10 @@
 				$(".slide_box").height(wrap_height);
 				$(".box").height(wrap_height);
 			}
+
+			$(function(){
+				$(".go_site_btn").stop().animate({"transform":"rotate(360deg)"},300);
+			})
 
 			
 			

@@ -133,11 +133,11 @@ body { margin:0; padding:0; }
 }
 
 .go_site_btn { width:11%; height:15%; position:absolute; border:1px solid #292929; cursor:pointer; border-radius:15%;
-				/* animation-name: go_site;
+				animation-name: go_site;
 				animation-duration: 1s;
 				animation-delay:.5s;
 				animation-iteration-count:infinite;
-				animation-direction: cubic-bezier(.17,.67,.16,.67) altenate; */
+				animation-direction: cubic-bezier(.17,.67,.16,.67) altenate;
 				}
 
 @keyframes go_site{
