@@ -54,7 +54,9 @@ body { margin:0; padding:0; }
 				.prev { width:2%; height:5%; position:absolute; left:0; top:50%; margin-top:-5%; background:#efefef; z-index:15; }
 				.next { width:2%; height:5%; position:absolute; right:0; top:50%; margin-top:-5%; background:#ededed; z-index:15; }
 				
-				.pro_table td { padding:10px; }
+				.pro_table td { padding:10px; text-align:left; }
+
+				.skill_con { float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada; }
 				
 
 /* 화면크기가 1030px보다 클 때 */
@@ -84,7 +86,7 @@ body { margin:0; padding:0; }
 					.link_text { display:none; }
 
 			.pro_table { margin-top:5%; }
-			.pro_table td { border:1px solid #dadada; }
+			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; }
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
@@ -113,7 +115,7 @@ body { margin:0; padding:0; }
 					.link_text { display:none; }
 
 			.pro_table { margin-top:5%; }
-			.pro_table td { border:1px solid #dadada; }
+			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {

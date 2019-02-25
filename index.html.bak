@@ -95,24 +95,24 @@
 								</td>
 							</tr>
 							<tr>
-								<td style="background:#f7f7f7;">
+								<td style="background:#f7f7f7; padding:0; padding-left:10px;">
 									Skill
 								</td>
-								<td colspan=6 cols=0 style="padding:0;">
+								<td colspan=6 style="padding:0;">
 									<div>
-										<div style="float:left; width:20%; height:100%; box-sizing:border-box; border-left:2px solid #dadada;">
+										<div class="skill_con" style="border:0;">
 											HTML
 										</div>
-										<div style="float:left; width:20%;">
+										<div class="skill_con" style="">
 											PHP
 										</div>
-										<div style="float:left; width:20%;">
+										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
 											CSS
 										</div>
-										<div style="float:left; width:20%;">
+										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
 											MYSQL
 										</div>
-										<div style="float:left; width:20%;">
+										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
 											CSS
 										</div>
 									</div>
