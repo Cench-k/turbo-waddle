@@ -103,16 +103,16 @@
 										<div class="skill_con" style="border:0;">
 											HTML
 										</div>
-										<div class="skill_con" style="">
+										<div class="skill_con">
 											PHP
 										</div>
-										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
+										<div class="skill_con">
 											CSS
 										</div>
-										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
+										<div class="skill_con">
 											MYSQL
 										</div>
-										<div class="skill_con" style="float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada;">
+										<div class="skill_con">
 											CSS
 										</div>
 									</div>
