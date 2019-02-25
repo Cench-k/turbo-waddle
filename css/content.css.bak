@@ -153,7 +153,7 @@ body { margin:0; padding:0; }
 			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; font-size:13px; }
 
 			.img_on1 { width:614px; height:418px; position:absolute; left:-105px; top:-220px; z-index:5; background:#f5f5f5; display:none; }
-			.img_on2 { width:298px; height:376px; position:absolute; left:50px; top:-130px;; background:#f5f5f5; display:none; }
+			.img_on2 { width:298px; height:376px; position:absolute; left:-45px; top:-220px;; background:#f5f5f5; display:none; }
 }
 
 .go_site_btn { width:11%; height:15%; position:absolute; border:1px solid #292929; cursor:pointer; border-radius:15%;
