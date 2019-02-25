@@ -36,7 +36,7 @@
 								<td colspan=7 height="15px"></td>
 							</tr>
 							<tr>
-								<td rowspan=8 style="background:#f7f7f7;">
+								<td rowspan=6 style="background:#f7f7f7;">
 									사진
 								</td>
 								<td style="background:#f7f7f7;">
@@ -113,18 +113,13 @@
 											MYSQL
 										</div>
 										<div class="skill_con">
-											jQuery
+											Jquery
 										</div>
 									</div>
 								</td>
 							</tr>
 
-							
-
 						</table>
-						
-						
-						</div>
 					</div>
 					<div class="port view"></div>
 					<div class="port view"></div>
@@ -450,32 +445,7 @@
 						$(this).find(".link_text").stop().fadeOut();
 					});
 				});
-				//awardclose();
-				//awardclose2();
 			});
-			/*
-
-			function awardclose(){
-				$(".award1").click(function(e){
-					e.stopPropagation();
-					$(".img_on1").slideDown();
-				});
-
-				$("body").click(function(){
-					$(".img_on1").slideUp();
-				});
-			};
-			function awardclose2(){
-				$(".award2").click(function(e){
-					e.stopPropagation();
-					$(".img_on2").slideDown();
-				});
-
-				$("body").click(function(){
-					$(".img_on2").slideUp();
-				});
-			};
-			*/
 		</script>
 
 
