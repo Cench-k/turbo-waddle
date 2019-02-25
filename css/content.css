@@ -57,8 +57,10 @@ body { margin:0; padding:0; }
 				.pro_table td { padding:10px; text-align:left; }
 
 				.skill_con { float:left; width:20%; padding:10px; box-sizing:border-box; text-align:center; border-left:2px solid #dadada; position:relative; }
-				
 
+				.img_on1 { width:614px; height:418px; text-align:center; z-index:5; display:none; background:url('img/Academic.jpg') no-repeat center top; }
+				.img_on2 { width:912px; height:408px; text-align:center; z-index:5; display:none; background:url('img/Academic.png') no-repeat center top; background-size:contain; }
+				.img_on2 > img { float:left; }
 /* 화면크기가 1030px보다 클 때 */
 @media screen and (min-width:1500px)  {
 	.wrap { width:100%; max-width:1920px; min-width:1500px; margin:0 auto; }
@@ -88,8 +90,8 @@ body { margin:0; padding:0; }
 			.pro_table { margin-top:5%; }
 			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; }
 
-			.img_on1 { width:614px; height:418px; position:absolute; left:50px; top:-130px; z-index:5; background:#f5f5f5; display:none; }
-			.img_on2 { width:298px; height:376px; position:absolute; left:50px; top:-130px; z-index:5; background:#f5f5f5; display:none; }
+			.img_on1 { position:absolute; left:50px; top:-130px; }
+			.img_on2 { position:absolute; left:-500px; top:-130px; }
 }
 /*중간 크기*/
 @media screen and (min-width:1200px)  and  (max-width:1499px){
@@ -120,8 +122,8 @@ body { margin:0; padding:0; }
 			.pro_table { margin-top:5%; }
 			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; }
 
-			.img_on1 { width:614px; height:418px; position:absolute; left:50px; top:-130px; z-index:5; background:#f5f5f5; display:none; }
-			.img_on2 { width:298px; height:376px; position:absolute; left:50px; top:-130px; z-index:5; background:#f5f5f5; display:none; }
+			.img_on1 { position:absolute; left:50px; top:-130px; z-index:5; }
+			.img_on2 { position:absolute; left:50px; top:-130px; z-index:5; }
 }
 /* 화면크기가 1030px보다 작을 때 */
 @media screen and (max-width:1200px) {
@@ -154,8 +156,8 @@ body { margin:0; padding:0; }
 			.pro_table { margin-top:10%; }
 			.pro_table td { border:1px solid #dadada; font-family:"BMDOHYEON"; font-size:13px; }
 
-			.img_on1 { width:614px; height:418px; position:absolute; left:-105px; top:-220px; z-index:5; background:#f5f5f5; display:none; }
-			.img_on2 { width:298px; height:376px; position:absolute; left:-45px; top:-220px;; background:#f5f5f5; display:none; }
+			.img_on1 { position:absolute; left:-105px; top:-220px; }
+			.img_on2 { position:absolute; left:-45px; top:-220px; }
 }
 
 .go_site_btn { width:11%; height:15%; position:absolute; border:1px solid #292929; cursor:pointer; border-radius:15%;
