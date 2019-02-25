@@ -36,7 +36,7 @@
 								<td colspan=7 height="15px"></td>
 							</tr>
 							<tr>
-								<td rowspan=6 style="background:#f7f7f7;">
+								<td rowspan=8 style="background:#f7f7f7;">
 									사진
 								</td>
 								<td style="background:#f7f7f7;">
@@ -115,6 +115,28 @@
 										<div class="skill_con">
 											JQuery
 										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan=6  style="background:#f7f7f7;">
+									Award career
+								</td>
+							</tr>
+							<tr>
+								<td colspan=3 style="position:relative;">
+									<span style="color:#696feb; cursor:pointer;" class="award1">ICT 융합공모전 장려상</span>
+									<div class="img_on1">
+										<img src="img/Academic.jpg"/>
+										A상품을 구매 시 모든 후기를 한번에 모아 볼 수 있는 사이트 계획 및 시안 제출
+									</div>
+								</td>
+								<td colspan=3 style="position:relative;">
+									<span style="color:#696feb; cursor:pointer;" class="award2">창의적인 교육훈련 장비 및 <br/> 매체개발 아이디어 공모전</span>
+									<div class="img_on2">
+										<img src="img/contest.jpg" alt="">
+										프로그램 계획 및 시안
 									</div>
 								</td>
 							</tr>
@@ -445,7 +467,30 @@
 						$(this).find(".link_text").stop().fadeOut();
 					});
 				});
+				awardclose();
+				awardclose2();
 			});
+
+			function awardclose(){
+				$(".award1").click(function(e){
+					e.stopPropagation();
+					$(".img_on1").slideDown();
+				});
+
+				$("body").click(function(){
+					$(".img_on1").slideUp();
+				});
+			};
+			function awardclose2(){
+				$(".award2").click(function(e){
+					e.stopPropagation();
+					$(".img_on2").slideDown();
+				});
+
+				$("body").click(function(){
+					$(".img_on2").slideUp();
+				});
+			};
 		</script>
 
 
