@@ -127,7 +127,7 @@
 							<tr>
 								<td colspan=3 style="position:relative;">
 									<span style="color:#696feb; cursor:pointer;" class="award1">ICT 융합공모전 장려상</span>
-									<div class="img_on2">
+									<div class="img_on1">
 										<img src="img/ict.jpg" />
 										사이트 계획, 프로그램 계획 및 시안
 									</div>
@@ -475,8 +475,14 @@
 					e.stopPropagation();
 					$(".img_on2").slideDown();
 				});
+				
+				$(".award1").click(function(e){
+					e.stopPropagation();
+					$(".img_on1").slideDown();
+				});
+
 				$("body").click(function(){
-					$(".img_on2").slideUp();
+					$(".img_on2, .img_on1").slideUp();
 				});
 			};
 		</script>
